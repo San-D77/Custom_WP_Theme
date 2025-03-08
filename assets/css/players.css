@@ -1,0 +1,452 @@
+/* Article Section */
+.head {
+    margin: 10px 0px 0px 0px;
+}
+
+.heading h1 {
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin: 0px;
+	letter-spacing:1.3px;
+	padding-left:2px;
+}
+
+.player-status {
+    display: inline-block;
+    margin: 2px;
+    font-size: 14px;
+}
+
+.player-status.active {
+    background: #3CB200;
+    padding: 5px 15px;
+    border-radius: 30px;
+    color: white;
+
+}
+
+.player-status.retired {
+    background: #964a04;
+    padding: 5px 15px;
+    border-radius: 30px;
+    color: white;
+
+}
+
+.image-and-facts {
+    min-height: 470px;
+    height: fit-content;
+    margin: 20px 0px;
+}
+
+.featured-image {
+    width: 650px;
+    height: 100%;
+	padding: 0px;
+}
+
+.featured-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 10px;
+    box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.4);
+}
+
+@media(max-width: 992px) {
+    .featured-image {
+        padding: 0px;
+    }
+
+    .image-and-facts .facts {
+        padding: 0px;
+    }
+}
+
+.heading-meta .position {
+
+    font-size: 18px;
+    font-weight: 600;
+    padding: 5px 0px;
+}
+
+.heading-meta .jersey-number {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.heading-meta .team-name {
+    display: block;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 5px 2px;
+}
+
+/* Related Posts */
+
+.related-post-wrap {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.related-post {
+    border: 1px solid #ededf5;
+    border-radius: 10px;
+    box-shadow: 6px 6px #ccd;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.related-articles-section .related-post-heading {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.related-post .image-div {
+    width: 100%;
+    height: 220px;
+}
+
+.related-post .image-div img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+    object-position: top;
+}
+
+.related-post .description-div {
+    flex: 1;
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.related-post a {
+    text-decoration: none;
+}
+
+.related-post .description-div .category {
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--theme_color);
+
+}
+
+.related-post .description-div .title {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 25px;
+    padding-bottom: 20px;
+}
+
+.related-post .description-div .author {
+    color: var(--content_font_color);
+    font-weight: 600;
+    text-align: right;
+    text-transform: capitalize;
+}
+
+.related-post .description-div .author a {
+    color: var(--content_font_color) !important;
+}
+
+.related-post .description-div .author a:hover {
+    color: var(--hover_color);
+}
+
+.instagram-media {
+    margin: 10px auto !important;
+}
+
+.twitter-tweet {
+    margin: 10px auto !important;
+}
+
+/* Table */
+table {
+    border: none;
+    padding: 5px 10px;
+}
+
+/* Target every other table row and give it a light gray background */
+table td {
+    padding: 5px 10px;
+
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Target every odd table row and give it a white background */
+table tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+.tag{
+    display: inline-block;
+    font-size: var(--small_font);
+    padding: 3px 7px;
+    border: solid 1px var(--theme_color);
+    border-radius: 4px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+.tag:hover{
+    background: var(--theme_color);
+    
+}
+a.tag, a.tag:visited{
+    color: var(--theme_color);
+    text-decoration: none !important;
+}
+a.tag:hover{
+    color: #eee !important;
+}
+
+.social-share {
+    font-size: var(--big_font);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: fit-content;
+    border-radius: 6px;
+    width: fit-content;
+}
+
+.social-share a {
+    padding: 15px;
+    width: 50px;
+}
+
+.author-bio {
+    margin-top: 20px;
+    border: 1px solid #ccd;
+    border-radius: 7px;
+    padding: 10px 15px;
+}
+
+.author-bio p {
+    font-size: var(--big_font);
+    font-weight: 600;
+}
+
+/* 
+    ========================================
+        Breadcrumb CSS
+    ========================================
+*/
+.bc {
+    display: flex;
+    justify-content: start;
+}
+
+.breadcrumb-container {
+    padding-left: 0px;
+    margin: 0px;
+}
+
+.breadcrumb-container .breadcrumb {
+    display: inline-block;
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+
+.breadcrumb-container .breadcrumb a {
+    text-decoration: none;
+    color: var(--content_font_color);
+}
+
+.breadcrumb-container .breadcrumb a:hover {
+    text-decoration: none;
+    color: var(--hover_color);
+}
+
+
+
+/* ===========================================
+        List margin
+   ===========================================
+*/
+.article-content ul{
+    padding-left: 25px;
+}
+.article-content li {
+    margin-bottom: 15px;
+    list-style: none;
+    font-weight:500;
+    font-size: 17px;
+    
+}
+
+.article-content h2{
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.article-content li::before {
+    content: "🏈";
+    /* Use the desired list icon, such as a bullet (•) */
+    display: inline-block;
+    font-size: var(--medium_font);
+    /* Adjust the font size to change the icon size */
+    margin-right: 12px;
+    /* Add some spacing between the icon and list item text */
+    font-weight: 400;
+}
+
+/* ===========================================
+        Also Read
+   ===========================================
+*/
+.also-read {
+    margin-bottom: 15px;
+    border: 1px solid #7c9c23;
+    background: #e9f0d7;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.also-read a,
+.also-read a:visited {
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--theme_color);
+}
+
+.also-read a:hover {
+    color: var(--hover_color);
+    text-decoration: underline;
+}
+
+/* 
+    ====================================================
+        Facts
+    ====================================================
+*/
+.player-facts {
+    border-bottom-width: 0px;
+    padding: .5rem;
+    margin-top: 10px;
+    width: 100%;
+
+
+}
+
+.facts {
+    padding: 0px 20px;
+}
+
+.facts .single-fact {
+    margin-bottom: 15px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.fact-key {
+    color: var(--content_font_color);
+    font-weight: 600;
+}
+
+.fact-value {
+    font-size: 17px;
+}
+
+.fact-value a:hover {
+    color: var(--hover_color) !important;
+}
+
+
+
+.article-content {
+    font-family: 'Lato';
+    margin-top: 10px;
+    font-size: 18px;
+    line-height: 1.7em;
+    color: var(--content_font_color);
+    padding: 12px;
+}
+
+@media(max-width: 576px) {
+    .article-content {
+        margin: 25px 0px;
+    }
+}
+
+/* Custom CSS for the fixed first column and horizontally scrollable table */
+.table-container {
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+.table-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-container table tr:nth-child(even) {
+    background-color: #fff;
+}
+
+.table-container table tr:nth-child(1) {
+    background-color: #f4f4f4;
+
+}
+
+
+.table-container td {
+    font-size: 17px;
+    text-align: left;
+    padding: 5px 15px;
+}
+
+.table-container tr:first-child td:not(:first-child) {
+
+    border-bottom: 2px groove #d8d5d5;
+    /* Adjust the width and color as needed */
+}
+
+
+/* Fix the first column */
+.table-container th:first-child,
+.table-container td:first-child {
+    position: sticky;
+    left: 0;
+    z-index: 1;
+    background-color: #f4f4f4;
+    border-bottom: 2px groove #ffffff;
+    /* Adjust the background color as needed */
+}
+
+/* Add media query for responsive design on mobile devices */
+@media (max-width: 768px) {
+    .table-container {
+        overflow-x: scroll;
+    }
+}
+
+.article-content a{
+	color: var(--theme_color);
+}
+.article-content a:visited{
+	color: var(--visited_color);
+}
+.article-content a:hover{
+	color: var(--hover_color) !important;
+}
+.table-container td {
+    white-space: nowrap
+}
+.player-facts td:first-child{
+	white-space: nowrap;
+}

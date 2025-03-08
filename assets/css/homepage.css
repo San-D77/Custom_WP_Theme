@@ -1,0 +1,324 @@
+/* 
+    =========================================================
+        For Homepage
+    =========================================================
+*/
+/* 
+    =========================================================
+        For Slider
+    =========================================================
+*/
+
+.slider-image {
+  height: 550px;
+}
+.slider-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 5px;
+}
+
+.slider-image::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%; /* Adjust height to control the fade effect */
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0),
+    rgba(0, 0, 0, 0)
+  ); /* Gradient effect */
+  z-index: 1;
+  pointer-events: none; /* Allows clicking through to the image and links */
+}
+
+/* Title section styles */
+.slider-image .title-section a {
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  color: #fff;
+  font-weight: bold;
+  text-align: left;
+  overflow: hidden;
+  font-size: 40px;
+  line-height: 55px;
+  z-index: 1;
+}
+
+@media (max-width: 576px) {
+  .slider-image {
+    height: auto;
+  }
+  .slider-image .title-section a {
+    font-size: 25px;
+    line-height: 35px;
+  }
+}
+
+/* Text clipping after two lines */
+.slider-title {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+  margin: 0;
+  font-size: 16px; /* Adjust font size as needed */
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 820px) {
+  .slider-title {
+    font-size: 14px; /* Smaller font size for smaller screens */
+  }
+
+  .title-section {
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .slider-title {
+    font-size: 12px; /* Even smaller font size for very small screens */
+  }
+
+  .title-section {
+    padding: 6px;
+  }
+}
+
+.horizontal-line {
+  height: 2px;
+  background: linear-gradient(to right, transparent, #bbb, transparent);
+  margin: 20px 0;
+}
+
+/* General styles for each post wrapper */
+.under-slider-section-post-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Post container */
+.under-slider-section-post {
+  position: relative;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Image container */
+.under-slider-section-post .image-div {
+  height: 300px;
+}
+
+/* Image styling */
+.under-slider-section-post img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Title styling */
+.under-slider-section-post .title, .under-slider-section-post .title a {
+  position: relative;
+  padding: 0; /* Removed padding to ensure no extra spacing */
+  color: #333;
+  font-size: 20px;
+  font-weight: bold;
+  box-sizing: border-box;
+  text-align: left;
+  line-height: 1.2;
+  margin-top: 10px; /* Added margin for spacing between image and title */
+  overflow: hidden; /* Ensures the content is clipped if too long */
+  display: -webkit-box; /* Enables line clamping */
+  -webkit-line-clamp: 2; /* Limits to two lines */
+  -webkit-box-orient: vertical; /* Specifies vertical orientation for clamping */
+  text-overflow: ellipsis; /* Adds ellipsis (...) for overflow */
+  white-space: normal; /* Ensures proper word wrapping */
+}
+
+
+
+/* Section title styling */
+.section-title {
+  font-size: 26px; /* Slightly larger for more emphasis */
+  text-transform: uppercase;
+  color: #2a2a2a; /* Deep gray for sophisticated contrast */
+  text-align: center; /* Keeps the title centered */
+  margin-top: 10px; /* Space below the separator */
+  font-weight: 600; /* Bold but not too heavy */
+  letter-spacing: 1.2px; /* More spacing for an airy, elegant feel */
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /* Modern, sans-serif font */
+}
+
+/* Underline for additional emphasis */
+.section-title:after {
+  content: "";
+  display: block;
+  width: 60px; /* Wider than before for more presence */
+  height: 3px; /* Thicker underline for more visibility */
+  background: var(--hover_color); /* Darker shade for the underline */
+  margin: 8px auto 0; /* Centers the underline and positions it just below the text */
+}
+
+.display-wrap .heading {
+  padding: 25px 25px 0 25px;
+  color: var(--content_font_color);
+  font-size: var(--big_font);
+  font-weight: 700;
+}
+.display {
+  padding: 0px 25px 25px 25px;
+}
+
+.display-item {
+  background: #fff;
+  height: 500px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.display-item .image-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.display-item .image-div img {
+  width: 100%;
+  height: 250px;
+}
+.display-item .description-div {
+  flex: 1;
+  padding: 10px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.display-item .description-div .title {
+  font-size: var(--medium_font);
+  font-weight: 600;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.display-item .description-div a {
+  text-decoration: none;
+}
+.display-item .description-div .action {
+  text-align: center;
+}
+
+/* ==============================================
+        Bottom Section
+   ==============================================
+*/
+
+.related-post-wrap {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+@media (max-width: 576px) {
+  .related-post-wrap {
+    padding: 0px 10px;
+  }
+}
+
+.related-post {
+
+  border-radius: 10px;
+
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.related-articles-section .related-post-heading {
+  font-size: var(--medium_font);
+  font-weight: 500;
+}
+
+.related-post .image-div {
+  width: 100%;
+  height: 250px;
+}
+
+@media (max-width: 576px) {
+  .related-post .image-div {
+    width: 100%;
+    height: 250px;
+  }
+}
+
+.related-post .image-div img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px 10px 0 0;
+  object-fit: cover;
+  object-position: top;
+}
+
+.related-post .description-div {
+  flex: 1;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.related-post a {
+  text-decoration: none;
+}
+.related-post a:hover {
+  color: var(--hover_color);
+}
+
+.related-post .description-div .category a {
+  text-transform: uppercase;
+  font-size: var(--small_font);
+  font-weight: 700;
+  color: var(--hover_color);
+}
+.related-post .description-div .category a:hover {
+  color: var(--hover_color);
+}
+
+.related-post .description-div .title {
+  font-size: var(--medium_font);
+  font-weight: 600;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.related-post .description-div .author {
+  font-size: var(--small_font);
+  color: var(--content_font_color);
+  font-weight: 600;
+  text-align: right;
+  text-transform: capitalize;
+}
+.related-post .description-div .author a {
+  color: var(--hover_color) !important;
+}
+.related-post .description-div .author a:hover {
+  color: var(--content_font_color) !important;
+}
+
+
